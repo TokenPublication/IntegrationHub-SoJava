@@ -25,7 +25,7 @@ public class Main {
         communication.createCommunication("TokenLinuxTestJava");
 
         communication.setSerialInCallback();
-        // communication.setDeviceStateCallback();
+        communication.setDeviceStateCallback();
 
         try {
             Thread.sleep(3000);
