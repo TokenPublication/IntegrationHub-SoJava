@@ -21,7 +21,7 @@ $(JNI_HEADER): $(JAVA_SRC)
 
 # Target: Compile Native C Library and Link External .so
 $(LIB_NATIVE): $(JNI_SRC) $(JNI_HEADER) $(LIB_EXTERNAL)
-	$(CC) $(CFLAGS) -o $(LIB_NATIVE) $(JNI_SRC) -L/home/ismail/Desktop/sdksotestjava/src/main/resources -lIntegrationHub
+	$(CC) $(CFLAGS) -o $(LIB_NATIVE) $(JNI_SRC) -Lsrc/main/resources -lIntegrationHub
 
 # Target: Run Java program
 run: $(LIB_NATIVE)
